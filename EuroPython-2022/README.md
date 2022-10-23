@@ -1,3 +1,3 @@
-# EuroPython - 2022
+# EuroPython 2022 - Async Django
 
 Slides: https://slides.com/ivaylodonchev/europython-2022-async-django
