@@ -1,11 +1,13 @@
 import uuid
 
+from django.db import transaction
 from django.views.generic import View
 from django.http.response import HttpResponse
 from django.contrib.auth.models import User
 
 
 class CRUDView(View):
+    # @transaction.atomic
     def get(
         self,
         request,

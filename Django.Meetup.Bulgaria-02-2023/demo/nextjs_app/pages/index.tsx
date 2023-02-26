@@ -12,53 +12,54 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h1 className={styles.heading}>Django Meetup Bulgaria 27.02.2022</h1>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 10, 10, 10]} />
-          <ComponentWithFetch crud={[2, 10, 10, 10]} />
-          <ComponentWithFetch crud={[3, 10, 10, 10]} />
-          <ComponentWithFetch crud={[4, 10, 10, 10]} />
+          <ComponentWithFetch crud={[10, 10, 1, 1]} />
+          <ComponentWithFetch crud={[2, 10, 1, 1]} />
+          <ComponentWithFetch crud={[3, 10, 1, 1]} />
+          <ComponentWithFetch crud={[4, 10, 1, 1]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 10, 10, 10]} />
-          <ComponentWithFetch crud={[10, 2, 10, 10]} />
-          <ComponentWithFetch crud={[10, 3, 10, 10]} />
-          <ComponentWithFetch crud={[10, 4, 10, 10]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 2, 0, 0]} />
+          <ComponentWithFetch crud={[10, 3, 0, 0]} />
+          <ComponentWithFetch crud={[10, 4, 0, 0]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 10, 10, 10]} />
-          <ComponentWithFetch crud={[10, 10, 2, 10]} />
-          <ComponentWithFetch crud={[10, 10, 3, 10]} />
-          <ComponentWithFetch crud={[10, 10, 4, 10]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 10, 10, 10]} />
-          <ComponentWithFetch crud={[10, 10, 10, 2]} />
-          <ComponentWithFetch crud={[10, 10, 10, 3]} />
-          <ComponentWithFetch crud={[10, 10, 10, 4]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 2, 10, 10]} />
-          <ComponentWithFetch crud={[2, 2, 10, 10]} />
-          <ComponentWithFetch crud={[3, 2, 10, 10]} />
-          <ComponentWithFetch crud={[4, 2, 10, 10]} />
+          <ComponentWithFetch crud={[10, 2, 0, 0]} />
+          <ComponentWithFetch crud={[2, 2, 0, 0]} />
+          <ComponentWithFetch crud={[3, 2, 0, 0]} />
+          <ComponentWithFetch crud={[4, 2, 0, 0]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[2, 10, 10, 10]} />
-          <ComponentWithFetch crud={[2, 2, 10, 10]} />
-          <ComponentWithFetch crud={[2, 3, 10, 10]} />
-          <ComponentWithFetch crud={[2, 4, 10, 10]} />
+          <ComponentWithFetch crud={[2, 10, 0, 0]} />
+          <ComponentWithFetch crud={[2, 2, 0, 0]} />
+          <ComponentWithFetch crud={[2, 3, 0, 0]} />
+          <ComponentWithFetch crud={[2, 4, 0, 0]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 10, 10, 2]} />
-          <ComponentWithFetch crud={[10, 10, 2, 2]} />
-          <ComponentWithFetch crud={[10, 10, 3, 2]} />
-          <ComponentWithFetch crud={[10, 10, 4, 2]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
+          <ComponentWithFetch crud={[10, 10, 0, 0]} />
         </div>
         <div className={styles.row}>
-          <ComponentWithFetch crud={[10, 2, 10, 10]} />
-          <ComponentWithFetch crud={[10, 2, 10, 2]} />
-          <ComponentWithFetch crud={[10, 2, 10, 3]} />
-          <ComponentWithFetch crud={[10, 2, 10, 4]} />
+          <ComponentWithFetch crud={[10, 2, 0, 0]} />
+          <ComponentWithFetch crud={[10, 2, 0, 0]} />
+          <ComponentWithFetch crud={[10, 2, 0, 0]} />
+          <ComponentWithFetch crud={[10, 2, 0, 0]} />
         </div>
       </main>
     </>
