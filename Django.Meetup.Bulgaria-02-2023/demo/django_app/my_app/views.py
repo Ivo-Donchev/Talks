@@ -25,7 +25,7 @@ class CRUDView(View):
 
         logger.debug('Executing SELECT queries')
         for _ in range(select_queries_count):
-            list(User.objects.only('id'))
+            list(User.objects.all())
 
         logger.debug('Executing UPDATE queries')
         for _ in range(update_queries_count):
