@@ -46,20 +46,46 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # SQL queries logger
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'handlers': {
-#         'console': {
-#             'level': 'DEBUG',  # DEBUG or higher goes to the console
-#             'class': 'logging.StreamHandler',
-#         }
-#     },
-#     'loggers': {
-#         'django.db.backends': {
-#             'handlers': ['console'],
-#             'level': 'DEBUG',
-#             'propagate': False,
-#         }
-#     }
-# }
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        "django.server": {
+            "()": "my_app.logging.CustomWebServerFormatter",
+            "format": (
+                "{message} \n"
+                "{create_queries_count}({create_queries_time}s) \t"
+                "{select_queries_count}({select_queries_time}s) \t"
+                "{update_queries_count}({update_queries_time}s) \t"
+                "{delete_queries_count}({delete_queries_time}s) \t"
+                "{is_transaction}"
+            ),
+            "style": "{",
+        }
+
+    },
+    'handlers': {
+        "django.server": {
+            "level": "INFO",
+            "class": "logging.StreamHandler",
+            "formatter": "django.server",
+        },
+        "debug_console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "formatter": "django.server",
+        },
+    },
+    'loggers': {
+        'my_app.views': {
+            "handlers": ["debug_console"],
+            "level": "DEBUG",
+            "propagate": False,
+        },
+        "django.server": {
+            "handlers": ["django.server"],
+            "level": "INFO",
+            "propagate": False,
+        },
+    }
+}
