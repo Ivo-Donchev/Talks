@@ -6,6 +6,7 @@ from django.views.generic import View
 from django.http.response import HttpResponse
 from django.contrib.auth.models import User
 
+from .services import service_with_third_party_calls
 
 logger = logging.getLogger(__name__)
 
@@ -34,5 +35,8 @@ class CRUDView(View):
         logger.debug('Executing DELETE queries')
         for _ in range(delete_queries_count):
             User.objects.filter(id=-1).delete()
+
+        logger.debug('Third party calls')
+        service_with_third_party_calls(1, 2, a=3)
 
         return HttpResponse()

@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.heading}>Django Meetup Bulgaria 27.02.2022</h1>
+        <h1 className={styles.heading}>Django Meetup Bulgaria 27.02.2023</h1>
         <div className={styles.row}>
           <ComponentWithFetch crud={[1, 10, 10, 0]} />
           <ComponentWithFetch crud={[1, 11, 10, 0]} />
