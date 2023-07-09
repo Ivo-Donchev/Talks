@@ -1,0 +1,12 @@
+.main {
+  min-height: 100vh;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.heading {
+  margin: 20px 0px;
+  text-align: center;
+}

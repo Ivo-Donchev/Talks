@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+### Vim template
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+/my_app/node_modules/
+/django_app/db.sqlite3
